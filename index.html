@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feliz día, mi amigo especial</title>
+<link rel="stylesheet" href="Stely.css">
+</head>
+<body>
+<div class="fondo" id="fondo">
+  <div class="tarjeta">
+    <div class="ceja">14 de febrero · Amor y Amistad</div>
+    <h1>Feliz día, mi amigo especial</h1>
+    <div class="foto-wrap">
+      <img src="resources/jordi1-removebg-preview.png" alt="Jordi">
+    </div>
+    <p class="carta">
+      En este día tan especial para ti, mi amigo, tú que eres difícil de entender —que ni tu propio pana lo logra del todo— te deseo lo mejor: un futuro y una vida prósperos, porque de eso se trata, de llegar a la cima y hacer sentir orgullosos a mamá y papá.
+    </p>
+    <p class="carta">
+      Gracias por aguantar mis locuras, por las risas random y por seguir ahí de pana incondicional. Que este año te traiga muchas victorias, ¡y que sigas siendo ese loco que todos queremos!
+    </p>
+    <div class="divisor">✦</div>
+    <div class="chiste">
+      <img src="resources/ccb7456840b9cf314427f6ba273623f5-removebg-preview.png" alt="Tiburón con Nike">
+      <p>PD: encontré a tu spirit animal corriendo con Nike. Nunca cambies.</p>
+    </div>
+    <p class="firma">Con cariño, tu pana de siempre<span>Johan</span></p>
+  </div>
+</div>
+<script>
+(function(){
+  var contenedor = document.getElementById('fondo');
+  var emojis = ['❤', '♥', '💛'];
+  for (var i=0; i<18; i++){
+    var h = document.createElement('div');
+    h.className = 'heart';
+    h.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    h.style.left = Math.random()*100 + '%';
+    h.style.fontSize = (14 + Math.random()*18) + 'px';
+    h.style.animationDuration = (7 + Math.random()*8) + 's';
+    h.style.animationDelay = (Math.random()*10) + 's';
+    contenedor.appendChild(h);
+  }
+})();
+</script>
+</body>
+</html>
