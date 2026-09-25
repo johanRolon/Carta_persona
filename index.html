@@ -9,7 +9,7 @@
 <body>
 <div class="fondo" id="fondo">
   <div class="tarjeta">
-    <div class="ceja">14 de febrero · Amor y Amistad</div>
+    <div class="ceja">hola</div>
     <h1>Feliz día, mi amigo especial</h1>
     <div class="foto-wrap">
       <img src="resources/jordi1-removebg-preview.png" alt="Jordi">
@@ -28,21 +28,6 @@
     <p class="firma">Con cariño, tu pana de siempre<span>Johan</span></p>
   </div>
 </div>
-<script>
-(function(){
-  var contenedor = document.getElementById('fondo');
-  var emojis = ['❤', '♥', '💛'];
-  for (var i=0; i<18; i++){
-    var h = document.createElement('div');
-    h.className = 'heart';
-    h.textContent = emojis[Math.floor(Math.random()*emojis.length)];
-    h.style.left = Math.random()*100 + '%';
-    h.style.fontSize = (14 + Math.random()*18) + 'px';
-    h.style.animationDuration = (7 + Math.random()*8) + 's';
-    h.style.animationDelay = (Math.random()*10) + 's';
-    contenedor.appendChild(h);
-  }
-})();
-</script>
+
 </body>
 </html>
